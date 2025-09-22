@@ -1,0 +1,25 @@
+{
+    "name": "unopim/youtube-manager",
+    "description": "YouTube video management extension for UNO PIM",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "YouTube",
+            "email": "vkonovaluck@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Extra\\YouTube\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YouTubeServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
