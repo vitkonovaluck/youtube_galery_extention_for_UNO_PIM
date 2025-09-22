@@ -7,7 +7,7 @@
 - Міграція для зберігання відео (name + url)
 - Сторінка з Datagrid, що відображає список доданих відео
 - Кнопка **Add Video** для додавання нового відео
-- Додавання відео через модальне вікно з двома полями:
+- Додавання відео через окрему сторінку з двома полями:
     - `name` — назва відео
     - `url` — посилання на YouTube
 - Видалення відео можливе безпосередньо у Datagrid
@@ -40,7 +40,11 @@ https://github.com/vitkonovaluck/youtube_galery_extention_for_UNO_PIM
 
 На сервері розпакуйте архів прямо у директорію:
 ```bash 
-unzip youtube_galery_extention_for_UNO_PIM.zip -d packages/Extra/
+unzip youtube_galery_extention_for_UNO_PIM-main.zip -d packages/Extra/
+cd packages/Extra/youtube_galery_extention_for_UNO_PIM-main
+mv YouTube ../
+cd ..
+rm -rf youtube_galery_extention_for_UNO_PIM-main
 ```
 В результаті повинно вийти:
 ```bash
@@ -68,4 +72,6 @@ composer dump-autoload
 php artisan migrate
 ```
 
-І у меню з’явиться пункт YouTube, де можна додавати та переглядати відео.
+І у меню з’явиться пункт "YouTube відео", де можна додавати та переглядати відео.
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
